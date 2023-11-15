@@ -11,6 +11,18 @@ Créer un fichier en format .yml et y mettre ce code :
 
 Dans target, nous avons l'application web que nous souhaitons tester.
 
+Ensuite nous avons differentes phases : 
+- La 1ère phase appelée Warm up correspond à l'augmentation progressive du taux d'arrivés de 1 à 5 utilisateurs par seconde pour une durée totale de 60 sec, 
+- La 2e phase appelée Ram up load correspond à l'augmentation progressive du taux d'arrivés de 5 à 10 utilisateurs par seconde pour une durée totale de 60 sec,
+- Et la dernière appelée spike, de 10 à 30 utilisateurs par secondes pour une durée totale de 30 sec.
 
+Nous avons ensuite différents plugins qui fournissent des fonctionnalités supplémentaires pour évaluer les performances et la qualité de l'application.
+- Apdex (satisfaction de l'utilisateur) : toutes les réponses avec un temps de réponse inférieur à 100 ms sont considérées comme satisfaisantes.
+- ensure : Cette section définit des seuils pour les temps de réponse. Elle indique que le test doit s'assurer que 99% des réponses ont un temps de réponse inférieur à 100 ms et que 95% des réponses ont un temps de réponse inférieur à 75 ms.
 
-![artillery2](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/9f7ad5a8-9322-4c6d-93f9-feaa65fbe2de)
+Enfin, les scénarios consistent à effectuer 100 boucles où chaque boucle effectue une requête GET vers les differents endpoints.
+
+## Résultats de test
+
+![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/3814c89e-b966-4f19-9e4b-e5f640de7c88)
+
