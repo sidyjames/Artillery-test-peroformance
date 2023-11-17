@@ -26,3 +26,10 @@ Enfin, les scénarios consistent à effectuer 100 boucles où chaque boucle effe
 
 ![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/3814c89e-b966-4f19-9e4b-e5f640de7c88)
 
+
+![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/cb73704d-2fa5-4a24-b5c8-cd7563727e9c)
+
+
+![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/5fe2e4fe-37ff-4390-8a34-f7bf3fc90eda)
+
+
