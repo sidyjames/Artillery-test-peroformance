@@ -9,6 +9,11 @@ DNS : webappdaddy.azurewebsites.net
 Technologies utilisées : Microsoft Azure (App Services, CosmosDB avec mongoDB...), Docker, Node.js
 
 # Build et run du projet
+
+### clône du github
+git clone <URL_DU_PROJET_GITHUB>
+cd <NOM_DU_REPERTOIRE_DU_PROJET>
+
 ### Installation des dependances
 npm install
 
