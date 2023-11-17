@@ -1,5 +1,25 @@
+# Description du projet
+Mon application, construite avec Node.js et hébergée sur Azure, repose sur une architecture robuste qui tire parti de Cosmos DB et MongoDB.
+En optant pour une approche NoSql, mon application simplifie considérablement les opérations de base de données, accélère le développement, réduit les risques d'erreurs humaines, et facilite la maintenance à long terme. Cette solution offre une agilité accrue dans la gestion des données, permettant de répondre rapidement aux besoins changeants de l'application sans compromettre la stabilité.
+
+L'intégration de Cosmos DB enrichit l'expérience en offrant une gestion évolutive et une haute disponibilité des données. En combinant ces technologies puissantes, mon application offre une solution complète, moderne et efficace pour répondre aux exigences croissantes du traitement des données dans le cloud.
+Endpoints: "/" et "/users"
+DNS : webappdaddy.azurewebsites.net
+
+Technologies utilisées : Microsoft Azure (App Services, CosmosDB avec mongoDB...), Docker, Node.js
+
+# Build et run du projet
+### Installation des dependances
+npm install
+
+### Construction de l'image docker
+docker build -t expressappazure .
+
+### Execution du conteneur docker
+docker run -p 3000:3000 expressappazure
+
 # Artillery-test-peroformance
-Ce réferentiel contient les scripts et les résultats d'un test de performance réalisé avec Artillery pour évaluer les performances de notre application web dévelopée en node js et hébergée sur Azure.
+Ce réferentiel contient les scripts et les résultats d'un test de performance réalisé avec Artillery pour évaluer les performances de notre application web dévelopée en Node.js et hébergée sur Azure.
 
 ## Commande pour installer Artillery
 ### npm install -g artillery@latest
@@ -26,10 +46,17 @@ Enfin, les scénarios consistent à effectuer 100 boucles où chaque boucle effe
 
 ![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/3814c89e-b966-4f19-9e4b-e5f640de7c88)
 
+## Méthode GET pour récupérer tous les documents de la BDD
 
 ![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/cb73704d-2fa5-4a24-b5c8-cd7563727e9c)
 
+## Méthode PUT pour modifier un document de la BDD
 
 ![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/5fe2e4fe-37ff-4390-8a34-f7bf3fc90eda)
 
+## Méthode DELETE pour supprimer un document de la BDD
+![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/5aac35eb-ca94-43a0-a159-f95d9c4ca3b6)
+
+## Push de l'image Docker sur DockerHub
+![image](https://github.com/sidyjames/Artillery-test-peroformance/assets/95179072/d71fe0fb-f095-4baa-8f3e-d38137e455c0)
 
