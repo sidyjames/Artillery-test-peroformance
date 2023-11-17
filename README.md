@@ -11,8 +11,7 @@ Technologies utilisées : Microsoft Azure (App Services, CosmosDB avec mongoDB..
 # Build et run du projet
 
 ### clône du github
-git clone <URL_DU_PROJET_GITHUB>
-cd <NOM_DU_REPERTOIRE_DU_PROJET>
+git clone https://github.com/sidyjames/Artillery-test-peroformance.git
 
 ### Installation des dependances
 npm install
